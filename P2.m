@@ -26,3 +26,8 @@ title('Correct image')
 subplot(1,2,2)
 imagesc(numeral) % the image of what network has coughed up
 title('Trained Networks result')
+
+
+v = font(:,:,1);          
+c = v(:)*v(:)';
+x = [v(:); c(:)];  % use x as the network input
